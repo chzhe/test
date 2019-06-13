@@ -19,6 +19,8 @@
 
         layer.msg('Hello World');
     });
+</script>
+<script>
     //页面层
 
     layer.open({
