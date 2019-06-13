@@ -37,7 +37,7 @@
         layer.confirm('请注册', {
             btn: ['确定','取消'] //按钮
         }, function(){
-            layer.msg('未注册不能使用全部功能', {icon: 1});
+            layer.msg('未注册不能使用全部功能', {icon: 2});
         // }, function() {
         //     layer.msg('也可以这样', {
         //         time: 20000, //20s后自动关闭
