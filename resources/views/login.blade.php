@@ -37,12 +37,12 @@
         layer.confirm('请注册', {
             btn: ['确定','取消'] //按钮
         }, function(){
-            layer.msg('未注册不能使用全部功能', {icon: 0});
-        // }, function() {
-        //     layer.msg('也可以这样', {
-        //         time: 20000, //20s后自动关闭
-        //         btn: ['明白了', '知道了']
-        //     });
+            layer.msg('好的', {icon: 1});
+        }, function() {
+            layer.msg('未注册不能使用全部功能', {
+                time: 20000, //20s后自动关闭
+                btn: ['明白了']
+            });
         });
     });
 </script>
