@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>派好商城后台管理系统</title>
+    <title>MyTest</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -70,7 +70,7 @@
 
     <div class="content">
         <div class="title m-b-md">
-            派 好 后 台 管 理 系 统
+            This is my test.
         </div>
 
     </div>
