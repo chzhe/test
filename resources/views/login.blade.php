@@ -1,5 +1,5 @@
 <!doctype html>
-@extends('admin._construct')
+{{--@extends('admin._construct')--}}
 <html lang="{{ app()->getLocale() }}">
 <head>
     <meta charset="utf-8">
