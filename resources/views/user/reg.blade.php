@@ -30,7 +30,7 @@
             </div>
 
             <div class="layui-form-item">
-                <button id="login" class="layui-btn layui-btn-fluid" lay-submit="" lay-filter="login_submit">登  入</button>
+                <button id="reg" class="layui-btn layui-btn-fluid" lay-submit="" lay-filter="login_submit">注册</button>
             </div>
 
         </div>
