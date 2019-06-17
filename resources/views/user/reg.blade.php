@@ -63,7 +63,7 @@
             var mobile = data.field.mobile
                 ,password = data.field.password;
             $.ajax({
-                url:"{{url('user/reg')}}",
+                url:"{{url('welcome')}}",
                 type:'post',
                 dataType:'json',
                 data:{mobile:mobile,password:password},
@@ -71,7 +71,7 @@
                     if(res.code == 400){
                         layer.msg(res.data);
                     }else{
-                        self.location.href="{{url('user/reg')}}";
+                        self.location.href="{{url('welcome')}}";
                     }
                 }
             });
