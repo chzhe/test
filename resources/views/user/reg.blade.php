@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<div class="layadmin-user-login layadmin-user-display-show" id="login" style="display: none;">
+<div class="layadmin-user-login layadmin-user-display-show" id="register" style="display: none;">
 
     <div class="layadmin-user-login-main">
         <div class="layadmin-user-login-box layadmin-user-login-header">
