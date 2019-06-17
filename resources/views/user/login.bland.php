@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>登入 - 派好商城后台管理系统</title>
+    <title>登入</title>
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -18,8 +18,8 @@
 
     <div class="layadmin-user-login-main">
         <div class="layadmin-user-login-box layadmin-user-login-header">
-            <h2>派好</h2>
-            <p>后台管理系统</p>
+            <h2>TEST</h2>
+            <p>测试登录</p>
         </div>
         <div class="layadmin-user-login-box layadmin-user-login-body layui-form">
             <div class="layui-form-item">
@@ -40,7 +40,7 @@
 
     <div class="layui-trans layadmin-user-login-footer">
 
-        <p>© 2019 <a href="https://blog.adminchao.com/" target="_blank">blog.adminchao.com</a></p>
+        <p>© 2019 <a href="chzhe.github.io" target="_blank">Blog</a></p>
 
     </div>
 
