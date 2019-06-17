@@ -71,7 +71,7 @@
                     if(res.code == 400){
                         layer.msg(res.data);
                     }else{
-                        self.location.href="{{url('admin/index')}}";
+                        self.location.href="{{url('user/reg')}}";
                     }
                 }
             });
