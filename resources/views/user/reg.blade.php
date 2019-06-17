@@ -12,7 +12,7 @@
 </head>
 <body>
 
-< class="login-main">
+{{--< class= "login-main">--}}
     <header class="layui-elip" style="width: 82%">注册页</header>
     <form class="layui-form" action="">
         <div class="layui-form-item">
