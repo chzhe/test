@@ -12,60 +12,73 @@
 </head>
 <body>
 
-{{--< class= "login-main">--}}
-    <header class="layui-elip" style="width: 82%">注册页</header>
-    <form class="layui-form" action="">
-        <div class="layui-form-item">
-            <label class="layui-form-label">输入框</label>
-            <div class="layui-input-block">
-                <input type="text" name="mobile" required  lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
-            </div>
+<div class="layadmin-user-login layadmin-user-display-show" id="login" style="display: none;">
+
+    <div class="layadmin-user-login-main">
+        <div class="layadmin-user-login-box layadmin-user-login-header">
+            <h2>TEST</h2>
+            <p>测试系统</p>
         </div>
-        <div class="layui-form-item">
-            <label class="layui-form-label">密码框</label>
-            <div class="layui-input-inline">
-                <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+        <div class="layadmin-user-login-box layadmin-user-login-body layui-form">
+            <div class="layui-form-item">
+                <label class="layadmin-user-login-icon layui-icon layui-icon-username" for="mobile"></label>
+                <input type="text" name="mobile" id="mobile" lay-verify="required" placeholder="用户名" class="layui-input">
             </div>
             <div class="layui-form-item">
-                <div class="layui-input-block">
-                    <button class="layui-btn" lay-submit lay-filter="register_submit">注册</button>
-                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
-                </div>
+                <label class="layadmin-user-login-icon layui-icon layui-icon-password" for="password"></label>
+                <input type="password" name="password" id="password" lay-verify="required" placeholder="密码" class="layui-input">
             </div>
-        </div>
-    </form>
 
-    <script>
-        layui.use(['form','element', 'layer'],function(){
-            var form = layui.form
-                ,element = layui.element
-                ,layer = layui.layer
-                ,$=layui.jquery;
-            $.ajaxSetup({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            <div class="layui-form-item">
+                <button id="login" class="layui-btn layui-btn-fluid" lay-submit="" lay-filter="login_submit">登  入</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="layui-trans layadmin-user-login-footer">
+
+        <p>© 2019 <a href="chzhe.github.io" target="_blank">MyBlog</a></p>
+
+    </div>
+
+
+
+</div>
+
+<script src="./plugins/layui/layui.js"></script>
+<script>
+    layui.use(['form','element', 'layer'],function(){
+        var form = layui.form
+            ,element = layui.element
+            ,layer = layui.layer
+            ,$=layui.jquery;
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        //监听提交
+        form.on('submit(login_submit)', function(data){
+            var mobile = data.field.mobile
+                ,password = data.field.password;
+            $.ajax({
+                url:"{{url('user/reg')}}",
+                type:'post',
+                dataType:'json',
+                data:{mobile:mobile,password:password},
+                success:function(res){
+                    if(res.code == 400){
+                        layer.msg(res.data);
+                    }else{
+                        self.location.href="{{url('admin/index')}}";
+                    }
                 }
             });
-
-            //监听提交
-            form.on('submit(login_submit)', function(data){
-                var mobile = data.field.mobile
-                    ,password = data.field.password;
-                $.ajax({
-                    url:"{{url('admin/login')}}",
-                    type:'post',
-                    dataType:'json',
-                    data:{mobile:mobile,password:password},
-                    success:function(res){
-                        if(res.code == 400){
-                            layer.msg(res.data);
-                        }else{
-                            self.location.href="{{url('admin/index')}}";
-                        }
-                    }
-                });
-                return false;
-            });
+            return false;
         });
-    </script>
-</body>>
+    });
+</script>
+</body>
+
+</html>
