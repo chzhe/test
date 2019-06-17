@@ -12,20 +12,20 @@
 </head>
 <body>
 
-<div class="layadmin-user-login layadmin-user-display-show" id="register" style="display: none;">
+<div class="layui-form-item" id="register" style="display: none;">
 
-    <div class="layadmin-user-login-main">
-        <div class="layadmin-user-login-box layadmin-user-login-header">
+    <div class="layui-form-item">
+        <div class="layui-form-item ">
             <h2>TEST</h2>
             <p>测试系统</p>
         </div>
-        <div class="layadmin-user-login-box layadmin-user-login-body layui-form">
+        <div class="layui-form-item">
             <div class="layui-form-item">
-                <label class="layadmin-user-login-icon layui-icon layui-icon-username" for="mobile"></label>
+                <label class="layui-form-item" for="mobile"></label>
                 <input type="text" name="mobile" id="mobile" lay-verify="required" placeholder="用户名" class="layui-input">
             </div>
             <div class="layui-form-item">
-                <label class="layadmin-user-login-icon layui-icon layui-icon-password" for="password"></label>
+                <label class="layui-form-item" for="password"></label>
                 <input type="password" name="password" id="password" lay-verify="required" placeholder="密码" class="layui-input">
             </div>
 
@@ -36,7 +36,7 @@
         </div>
     </div>
 
-    <div class="layui-trans layadmin-user-login-footer">
+    <div class="layui-form-item">
 
         <p>© 2019 <a href="chzhe.github.io" target="_blank">MyBlog</a></p>
 
