@@ -12,8 +12,7 @@ class User extends Model
     protected $hidden = ['password'];
 
 
-    public static function generatePassword($password)
-    {
+    public static function generatePassword($password){
         $salt          = env('PASSWORD_SALT');
         $passwordChars = str_split($password);
 
@@ -21,6 +20,11 @@ class User extends Model
             $salt .= md5($char);
         }
         return md5($salt);
+    }
+
+
+    public static function getUserId(){
+        return session('user_id');
     }
 
 
