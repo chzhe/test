@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="../frame/static/css/style.css">
     <link rel="icon" href="../frame/static/image/code.png">
 </head>
-<body>
 
+<body>
 <div class="layui-form-item" id="register" style="display: none;">
 
     <div class="layui-form-item">
@@ -22,15 +22,16 @@
         <div class="layui-form-item">
             <div class="layui-form-item">
                 <label class="layui-form-item" for="mobile"></label>
-                <input type="text" name="mobile" id="mobile" lay-verify="required" placeholder="用户名" class="layui-input">
+                <input type="text" name="mobile" id="mobile"  required lay-verify="required" placeholder="用户名"
+                       class="layui-input">
             </div>
             <div class="layui-form-item">
                 <label class="layui-form-item" for="password"></label>
-                <input type="password" name="password" id="password" lay-verify="required" placeholder="密码" class="layui-input">
+                <input type="password" name="password" id="password" required lay-verify="required" placeholder="密码" class="layui-input">
             </div>
 
             <div class="layui-form-item">
-                <button id="reg" class="layui-btn layui-btn-fluid" lay-submit="" lay-filter="reg_submit">注册</button>
+                <button id="reg" class="layui-btn layui-btn-fluid" lay-submit  lay-filter="reg_submit">注册</button>
             </div>
 
         </div>
