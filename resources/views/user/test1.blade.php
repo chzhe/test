@@ -16,19 +16,19 @@
         <label class="layui-form-label">输入框</label>
         <div class="layui-input-block">
             <input type="text" name="mobile" required  lay-verify="required" placeholder="请输入标题" autocomplete="off"
-                   class="layui-input">
+                   class="layui-input" id ="mo">
         </div>
     </div>
     <div class="layui-form-item">
         <label class="layui-form-label">密码框</label>
         <div class="layui-input-inline">
             <input type="password" name="password" required lay-verify="required" placeholder="请输入密码"
-                   autocomplete="off" class="layui-input">
+                   autocomplete="off" class="layui-input" id="psw">
         </div>
 
         <div class="layui-form-item">
             <div class="layui-input-block">
-                <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+                <button class="layui-btn" lay-submit lay-filter="formDemo" onclick="commit">立即提交</button>
                 <button type="reset" class="layui-btn layui-btn-primary">重置</button>
             </div>
         </div>
@@ -45,6 +45,20 @@
 
         layer.msg('能不能行');
     });
+    function commit() {
+        var mobile = $("#mo").val();
+        var password =$("#pws").val();
+        $.post("register",
+            {
+                mobile:mobile,
+                password:password,
+                // url:"http://www.runoob.com"
+            },
+            function(data,status){
+                alert("数据: \n" + data + "\n状态: " + status);
+            });
+
+    }
 </script>
 </body>
 </html>
