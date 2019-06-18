@@ -42,7 +42,7 @@
     layui.use(['layer', 'form'], function() {
         var layer = layui.layer
             , form = layui.form
-            , $ = layui.jquery;
+            , $ = layui.jQuery;
         //
         //     layer.msg('能不能行');
 
