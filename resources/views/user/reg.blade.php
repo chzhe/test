@@ -12,14 +12,14 @@
     <link rel="icon" href="../layui/images/face/0.gif">
 </head>
 
-{{--<body>--}}
-{{--<div class="layui-form-item" id="register" style="display: none;">--}}
+<body>
+<div class="layui-form-item" id="register" style="display: none;">
 
-    {{--<div class="layui-form-item">--}}
-        {{--<div class="layui-form-item ">--}}
-            {{--<h2>TEST</h2>--}}
-            {{--<p>测试系统</p>--}}
-        {{--</div>--}}
+    <div class="layui-form-item">
+        <div class="layui-form-item ">
+            <h2>TEST</h2>
+            <p>测试系统</p>
+        </div>
         {{--<form class="layui-form" action="">--}}
         {{--<div class="layui-form-item">--}}
             {{--<div class="layui-form-item">--}}
@@ -48,7 +48,7 @@
         {{--<p>© 2019 <a href="chzhe.github.io" target="_blank">MyBlog</a></p>--}}
 
     {{--</div>--}}
-{{--</div>--}}
+</div>
 
 
 
@@ -91,6 +91,6 @@
 
 {{--</script>--}}
 
-{{--</body>--}}
+</body>
 
 </html>
