@@ -19,6 +19,7 @@
             <h2>TEST</h2>
             <p>测试系统</p>
         </div>
+        <form class="layui-form" action="">
         <div class="layui-form-item">
             <div class="layui-form-item">
                 <label class="layui-form-item" for="mobile"></label>
@@ -38,17 +39,19 @@
             </div>
 
         </div>
-    </div>
+        </form>
+</div>
 
     <div class="layui-form-item">
 
         <p>© 2019 <a href="chzhe.github.io" target="_blank">MyBlog</a></p>
 
     </div>
-
-
-
 </div>
+
+
+
+
 
 <script src="../layui/layui.js"></script>
 <script>
