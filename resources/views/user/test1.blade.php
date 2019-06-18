@@ -49,7 +49,7 @@
         //监听提交
         form.on('submit(formDemo)', function (data) {
             var pram = data.field;  //json
-            layer.msg(pram);
+
             $.ajax({
                 url: 'register',     //api address
                 type: 'post',//POST || GET
