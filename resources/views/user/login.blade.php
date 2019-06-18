@@ -28,7 +28,7 @@
     </div>>
 </form>
 <!-- 你的HTML代码 -->
-
+<script src="../layui/layui.js"></script>
         <script>
             //Demo
             layui.use('layer','form', function(){
