@@ -10,7 +10,7 @@
 <body>
 
 <!-- 你的HTML代码 -->
-<form class="layui-form" action="">
+<form class="layui-form" >
     <h2>在这里注册</h2>
     <div class="layui-form-item">
         <label class="layui-form-label">输入框</label>
@@ -39,12 +39,12 @@
 <script src="../layui/layui.js"></script>
 <script>
     //一般直接写在一个js文件中
-    layui.use(['layer', 'form'], function(){
-        var layer = layui.layer
-            ,form = layui.form;
-
-        layer.msg('能不能行');
-    });
+    // layui.use(['layer', 'form'], function(){
+    //     var layer = layui.layer
+    //         ,form = layui.form;
+    //
+    //     layer.msg('能不能行');
+    // });
     function commit() {
         var mobile = $("#mo").val();
         var password =$("#pws").val();
