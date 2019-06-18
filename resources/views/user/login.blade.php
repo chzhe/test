@@ -31,7 +31,7 @@
 
         <script>
             //Demo
-            layui.use('form', function(){
+            layui.use('layer','form', function(){
                 var layer = layui.layui,
                     form = layui.form;
                 $ = layer.jquery;
