@@ -81,9 +81,7 @@
             return false;
         });
     });
-    chrome.extension.onMessage.addListener(function(request, _, sendResponse) {
-        sendResponse('');
-    });
+
 </script>
 </body>
 
