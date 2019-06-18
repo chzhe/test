@@ -47,6 +47,7 @@
                        success : function (response) {
                            if(response.code==200){
                                layer.msg ('登录成功')
+                               self.location.href="{{url('welcome')}}";
                            }else{
                                layer.msg(response.data)
                            }
