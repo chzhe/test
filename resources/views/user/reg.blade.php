@@ -60,11 +60,11 @@
             }
         });
         //监听提交
-        form.on('submit(login_submit)', function(data){
+        form.on('submit(reg_submit)', function(data){
             var mobile = data.field.mobile
                 ,password = data.field.password;
             $.ajax({
-                url:"{{url('welcome')}}",
+                url:"{{url('register')}}",
                 type:'post',
                 dataType:'json',
                 data:{mobile:mobile,password:password},
