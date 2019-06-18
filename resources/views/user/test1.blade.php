@@ -39,17 +39,25 @@
 <script src="../layui/layui.js"></script>
 <script>
     //一般直接写在一个js文件中
-    layui.use(['layer', 'form'], function(){
-        var layer = layui.layer
-            ,form = layui.form
-            ,$ = layui.jquery;
-
-        layer.msg('能不能行');
+    // layui.use(['layer', 'form'], function(){
+    //     var layer = layui.layer
+    //         ,form = layui.form
+    //         ,$ = layui.jquery;
+    //
+    //     layer.msg('能不能行');
 
         //监听提交
         form.on('submit(formDemo)', function(data){
-            console.log(data.field);
-            layer.msg(JSON.stringify(data.field));
+            var pram = data.field;  //json
+            $.ajax({
+                url:'register',     //api address
+                type:'',//POST || GET
+                dataType:'json', //数据类型
+                data:pram,      //data {username:$('#username').val(),password:$('#password').val()}
+                success:function(response){     //success callback
+                   console.log(response)
+                }
+            });
             return false;
         });
     });
