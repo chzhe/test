@@ -11,7 +11,10 @@ use App\User;
 class UserController extends Controller
 {
     public function reg(){
-        return view('user.test1');
+        return view('user.reg');
+    }
+    public function login(){
+        return view('user.login');
     }
     public function register(Request $request){
         $mobile = $request->get('mobile',null);

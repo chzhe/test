@@ -32,11 +32,27 @@
         <script>
             //Demo
             layui.use('form', function(){
-                var form = layui.form;
+                var layer = layui.layui,
+                    form = layui.form;
+                $ = layer.jquery;
 
                 //监听提交
                 form.on('submit(formDemo)', function(data){
-                    layer.msg(JSON.stringify(data.field));
+                    var pram = date.field;
+                   $.ajax({
+                       url : 'postLogin',
+                       type : 'post',
+                       dataType : 'json',
+                       data : pram,
+                       success : function (response) {
+                           if(response.code==200){
+                               layui.msg ('登录成功')
+                           }else{
+                               layui.msg('登录出现问题')
+                           }
+
+                       }
+                   });
                     return false;
                 });
             });
