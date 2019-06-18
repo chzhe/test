@@ -30,9 +30,9 @@
 <!-- 你的HTML代码 -->
 <script src="../layui/layui.js"></script>
         <script>
-            //Demo
+
             layui.use('layer','form', function(){
-                var layer = layui.layui,
+                var layer = layui.layer,
                     form = layui.form;
                 $ = layer.jquery;
 
