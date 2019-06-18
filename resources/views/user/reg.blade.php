@@ -4,23 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>test</title>
-    <hi>请先注册</hi>
+    <h1>请先注册</h1>
     <link rel="stylesheet" href="../layui/css/layui.css">
 </head>
 <body>
 
 <!-- 你的HTML代码 -->
 <form class="layui-form" >
-    <h2>在这里注册</h2>
+
     <div class="layui-form-item">
-        <label class="layui-form-label">输入框</label>
+        <label class="layui-form-label">手机号</label>
         <div class="layui-input-block">
             <input type="text" name="mobile" required  lay-verify="required" placeholder="请输入标题" autocomplete="off"
                    class="layui-input" id ="mo">
         </div>
     </div>
     <div class="layui-form-item">
-        <label class="layui-form-label">密码框</label>
+        <label class="layui-form-label">密码</label>
         <div class="layui-input-inline">
             <input type="password" name="password" required lay-verify="required" placeholder="请输入密码"
                    autocomplete="off" class="layui-input" id="psw">
