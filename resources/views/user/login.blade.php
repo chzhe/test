@@ -48,7 +48,7 @@
                            if(response.code==200){
                                layer.msg ('登录成功')
                            }else{
-                               layer.msg('登录出现问题')
+                               layer.msg(response.data)
                            }
 
                        }
