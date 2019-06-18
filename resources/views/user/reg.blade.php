@@ -30,7 +30,7 @@
                 <label class="layui-form-label" for="password"></label>
                 <div class="layui-input-inline">
                 <input type="password" name="password" id="password" required lay-verify="required" placeholder="密码"
-                       class="layui-input">
+                       autocomplete="off" class="layui-input">
                 </div>
             </div>
 
