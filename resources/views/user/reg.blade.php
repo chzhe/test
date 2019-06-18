@@ -58,10 +58,11 @@
                 success: function (response) {     //success callback
                     if(response.code==200){
                         layer.msg('注册成功')
+                        self.location.href="{{url('login')}}";
                     }else{
                         layer.msg(response.data)
                         layer.msg('已经注册，请登录')
-                        self.location.href="{{url('login')}}";
+
                     }
                 }
             });
