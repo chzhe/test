@@ -56,7 +56,11 @@
                 dataType: 'json', //数据类型
                 data: pram,      //data {username:$('#username').val(),password:$('#password').val()}
                 success: function (response) {     //success callback
-                    console.log(response)
+                    if(response.code==200){
+                        layer.msg('注册成功')
+                    }else{
+                        layer.msg(response.data)
+                    }
                 }
             });
             return false;
