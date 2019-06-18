@@ -1,10 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>注册页i</title>
+    <title>注册页</title>
+    <h1>请先注册</h1>
     <link rel="stylesheet" href="../layui/css/layui.css">
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <link rel="icon" href="../layui/images/face/0.gif">
 </head>
 
 {{--<body>--}}
@@ -77,8 +82,8 @@
                     {{--}else{--}}
                         {{--self.location.href="{{url('login')}}";--}}
                     {{--}--}}
-                // }
-            // });
+                {{--// }--}}
+            {{--// });--}}
 
             {{--return false;--}}
         {{--});--}}
