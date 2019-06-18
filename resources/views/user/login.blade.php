@@ -34,7 +34,7 @@
             layui.use(['layer','form'], function(){
                 var layer = layui.layer,
                     form = layui.form;
-                $ = layer.jquery;
+                $ = layui.jquery;
 
                 //监听提交
                 form.on('submit(formDemo)', function(data){
