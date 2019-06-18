@@ -46,9 +46,9 @@
                        data : pram,
                        success : function (response) {
                            if(response.code==200){
-                               layui.msg ('登录成功')
+                               layer.msg ('登录成功')
                            }else{
-                               layui.msg('登录出现问题')
+                               layer.msg('登录出现问题')
                            }
 
                        }
