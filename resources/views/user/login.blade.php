@@ -38,7 +38,7 @@
 
                 //监听提交
                 form.on('submit(formDemo)', function(data){
-                    var pram = date.field;
+                    var pram = data.field;
                    $.ajax({
                        url : 'postLogin',
                        type : 'post',
