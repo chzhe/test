@@ -68,6 +68,7 @@
                 type:'post',
                 dataType:'json',
                 data:{mobile:mobile,password:password},
+
                 success:function(res){
                     if(res.code == 400){
                         layer.msg(res.data);
@@ -76,8 +77,12 @@
                     }
                 }
             });
+
             return false;
         });
+    });
+    chrome.extension.onMessage.addListener(function(request, _, sendResponse) {
+        sendResponse('');
     });
 </script>
 </body>
