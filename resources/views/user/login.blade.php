@@ -28,34 +28,34 @@
     </div>>
 </form>
 <!-- 你的HTML代码 -->
-{{--<script src="../layui/layui.js"></script>--}}
-        {{--<script>--}}
+<script src="../layui/layui.js"></script>
+        <script>
 
-            {{--layui.use('layer','form', function(){--}}
-                {{--var layer = layui.layer,--}}
-                    {{--form = layui.form;--}}
-                {{--$ = layer.jquery;--}}
+            layui.use(['layer','form'], function(){
+                var layer = layui.layer,
+                    form = layui.form;
+                $ = layer.jquery;
 
-                {{--//监听提交--}}
-                {{--form.on('submit(formDemo)', function(data){--}}
-                    {{--var pram = date.field;--}}
-                   {{--$.ajax({--}}
-                       {{--url : 'postLogin',--}}
-                       {{--type : 'post',--}}
-                       {{--dataType : 'json',--}}
-                       {{--data : pram,--}}
-                       {{--success : function (response) {--}}
-                           {{--if(response.code==200){--}}
-                               {{--layui.msg ('登录成功')--}}
-                           {{--}else{--}}
-                               {{--layui.msg('登录出现问题')--}}
-                           {{--}--}}
+                //监听提交
+                form.on('submit(formDemo)', function(data){
+                    var pram = date.field;
+                   $.ajax({
+                       url : 'postLogin',
+                       type : 'post',
+                       dataType : 'json',
+                       data : pram,
+                       success : function (response) {
+                           if(response.code==200){
+                               layui.msg ('登录成功')
+                           }else{
+                               layui.msg('登录出现问题')
+                           }
 
-                       {{--}--}}
-                   {{--});--}}
-                    {{--return false;--}}
-                {{--});--}}
-            {{--});--}}
-        {{--</script>--}}
+                       }
+                   });
+                    return false;
+                });
+            });
+        </script>
 </body>
 </html>
