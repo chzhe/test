@@ -49,9 +49,10 @@
         //监听提交
         form.on('submit(formDemo)', function (data) {
             var pram = data.field;  //json
+            layer.msg(pram);
             $.ajax({
                 url: 'register',     //api address
-                type: '',//POST || GET
+                type: 'post',//POST || GET
                 dataType: 'json', //数据类型
                 data: pram,      //data {username:$('#username').val(),password:$('#password').val()}
                 success: function (response) {     //success callback
