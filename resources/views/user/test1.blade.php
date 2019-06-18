@@ -28,7 +28,7 @@
 
         <div class="layui-form-item">
             <div class="layui-input-block">
-                <button class="layui-btn" lay-submit lay-filter="formDemo" onclick="commit()">立即提交</button>
+                <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
                 <button type="reset" class="layui-btn layui-btn-primary">重置</button>
             </div>
         </div>
@@ -39,26 +39,21 @@
 <script src="../layui/layui.js"></script>
 <script>
     //一般直接写在一个js文件中
-    // layui.use(['layer', 'form'], function(){
-    //     var layer = layui.layer
-    //         ,form = layui.form;
-    //
-    //     layer.msg('能不能行');
-    // });
-    function commit() {
-        var mobile = $("#mo").val();
-        var password =$("#pws").val();
-        $.post("register",
-            {
-                mobile:mobile,
-                password:password,
-                // url:"http://www.runoob.com"
-            },
-            function(data,status){
-                alert("数据: \n" + data + "\n状态: " + status);
-            });
+    layui.use(['layer', 'form'], function(){
+        var layer = layui.layer
+            ,form = layui.form
+            ,$ = layui.jquery;
 
-    }
+        layer.msg('能不能行');
+
+        //监听提交
+        form.on('submit(formDemo)', function(data){
+            console.log(data.field);
+            layer.msg(JSON.stringify(data.field));
+            return false;
+        });
+    });
+
 </script>
 </body>
 </html>
