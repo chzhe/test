@@ -73,7 +73,7 @@
                     if(res.code == 400){
                         layer.msg(res.data);
                     }else{
-                        self.location.href="{{url('welcome')}}";
+                        self.location.href="{{url('login')}}";
                     }
                 }
             });
