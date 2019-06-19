@@ -7,13 +7,15 @@
 
 
     <link rel="stylesheet" href="../layui/css/layui.css">
+
 <style>
 
     .txtCenter{
         text-align:center;
     }
     body{
-        background-color: #3F3F3F;
+        background-image: url(../layui/images/face/72.jpg);
+        background-color:#cccccc;
     }
 
 
