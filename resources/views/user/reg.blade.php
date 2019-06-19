@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="../layui/css/layui.css">
 <style>
+
     .txtCenter{
         text-align:center;
     }
@@ -20,6 +21,7 @@
 <!-- 你的HTML代码 -->
 
 <h1 class="txtCenter" style="color:green">注册</h1>
+<div style="text-align: center;vertical-align: middle;">
 <form class="layui-form" style="text-align: center;vertical-align: middle;">
 
     <div class="layui-form-item" style="text-align: center;vertical-align: middle;">
@@ -45,7 +47,7 @@
         </div>
     </div>
 </form>
-
+</div>
 
 <script src="../layui/layui.js"></script>
 <script>
