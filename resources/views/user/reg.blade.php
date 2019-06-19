@@ -37,7 +37,7 @@
         </div>
     </div>
     <div class="layui-form-item">
-        <label class="layui-form-label">密码</label>
+        <label class="layui-form-label" style="color: #d4d4d4;">密码</label>
         <div class="layui-input-inline" style=>
             <input type="password" name="password" required lay-verify="required" placeholder="请输入密码"
                    autocomplete="off" class="layui-input" id="psw">
