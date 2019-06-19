@@ -23,9 +23,9 @@ class User extends Model
     }
 
 
-    public static function getUserId(){
-        return session('user_id');
-    }
+//    public static function getUserId(){
+//        return session('user_id');
+//    }
 
 
     public function getCreateTimeAttribute(){

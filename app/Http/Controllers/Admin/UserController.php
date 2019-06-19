@@ -74,53 +74,5 @@ class UserController extends Controller
     }
 
 
-    public function info(){
-        $user_id = User::getUserId();
-        $user = User::find($user_id);
-        if (empty($user)){
-            session()->forget('user_id');
-            return $this->error('无此用户');
-        }
-        return $this->success($user);
-    }
-
-//    public function change(Request $request){
-//        $nickname = $request->get('nickname',null);
-//        $avatar = $request->get('avatar',null);
-//        $password = $request->get('password',null);
-//        $msg_code = $request->get('msg_code',null);
-//        $user_id = User::getUserId();
-//        $user = User::find($user_id);
-//        try{
-//            if (!empty($nickname)){
-//                if (mb_strlen($nickname,'UTF-8') > 7){
-//                    return $this->error('昵称最长为7个字');
-//                }
-//                $user->nickname = $nickname;
-//            }
-//            if (!empty($avatar)){
-//                $user->avatar = $avatar;
-//            }
-//            if (!empty($password)){
-////                if (empty($msg_code)){
-////                        return $this->error('请填写短信验证码');
-////                    }
-////                    if ($msg_code != '7777'){
-////                        $check_code = session('msg_code');
-////                        if (empty($check_code)){
-////                            return $this->error('请重新发送短信验证码');
-////                        }
-////                        if ($msg_code != $check_code){
-////                            return $this->error('验证码错误');
-////                        }
-////                }
-//                $user->password = User::generatePassword($password);
-//            }
-//            $user->save();
-//            return $this->success('修改成功');
-//        }catch (\Exception $exception){
-//            return $this->error($exception->getMessage());
-//        }
-
 
     }
