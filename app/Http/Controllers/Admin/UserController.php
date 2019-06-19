@@ -16,6 +16,10 @@ class UserController extends Controller
     public function login(){
         return view('user.login');
     }
+    public function main(){
+        return view('main');
+    }
+
     public function register(Request $request){
         $mobile = $request->get('mobile',null);
         $password = $request->get('password',null);
