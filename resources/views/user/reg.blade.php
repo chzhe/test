@@ -21,7 +21,7 @@
 <!-- 你的HTML代码 -->
 
 <h1 class="txtCenter" style="color:green">注册</h1>
-<div style="text-align: center;vertical-align: middle;">
+<div style="width: 650px; position: relative; left:25%;">
 <form class="layui-form" style="text-align: center;vertical-align: middle;">
 
     <div class="layui-form-item" style="text-align: center;vertical-align: middle;">
