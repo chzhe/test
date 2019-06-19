@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>test</title>
     <h1>注册</h1>
+
     <link rel="stylesheet" href="../layui/css/layui.css">
+
 </head>
 
 <body>
@@ -14,7 +16,7 @@
 
     <div class="layui-form-item">
         <label class="layui-form-label">手机号</label>
-        <div class="layui-input-block">
+        <div class="layui-input-inline">
             <input type="text" name="mobile" required  lay-verify="required" placeholder="请输入标题" autocomplete="off"
                    class="layui-input" id ="mo">
         </div>
