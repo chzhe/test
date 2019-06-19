@@ -78,7 +78,6 @@
                         self.location.href="{{url('login')}}";
                     }else{
                         layer.msg(response.data)
-                        layer.msg('已经注册，请登录')
 
                     }
                 }
