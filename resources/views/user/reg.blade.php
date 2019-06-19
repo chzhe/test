@@ -21,7 +21,7 @@
 <!-- 你的HTML代码 -->
 
 <h1 class="txtCenter" style="color:green">注册</h1>
-<div style="width: 650px; position: relative; left: 45%;">
+<div style="width: 650px; position: relative; left: 43%;">
 <form class="layui-form">
 
     <div class="layui-form-item">
@@ -40,8 +40,8 @@
 
         <div class="layui-form-item">
             <div class="layui-input-block">
-                <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
-                <button type="reset" class="layui-btn layui-btn-primary"  style="background-color:darkgreen">重置</button>
+                <button class="layui-btn" lay-submit lay-filter="formDemo" style="background-color:green">立即提交</button>
+                <button type="reset" class="layui-btn layui-btn-primary"  style="background-color:green">重置</button>
             </div>
         </div>
     </div>
