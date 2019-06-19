@@ -3,21 +3,37 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>test</title>
-    <h1>注册</h1>
+    <title>MY</title>
+
 
     <link rel="stylesheet" href="../layui/css/layui.css">
-
+<style>
+    .txtCenter{
+        text-align:center;
+    }
+    .layui-form-label{
+        text-align: center;
+    }
+    .layui-input-inline{
+        text-align: center;
+    }
+    .layui-btn{
+        text-align: center;
+    }
+</style>
 </head>
 
 <body>
 <!-- 你的HTML代码 -->
+
+<h1 class="txtCenter" style="color:green">注册</h1>
 <form class="layui-form" >
 
     <div class="layui-form-item">
         <label class="layui-form-label">手机号</label>
         <div class="layui-input-inline">
-            <input type="text" name="mobile" required  lay-verify="required" placeholder="请输入标题" autocomplete="off"
+            <input type="text" name="mobile" required  lay-verify="required" placeholder="请输入手机号"
+                   autocomplete="off"
                    class="layui-input" id ="mo">
         </div>
     </div>
@@ -31,7 +47,7 @@
         <div class="layui-form-item">
             <div class="layui-input-block">
                 <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
-                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                <button type="reset" class="layui-btn layui-btn-primary" style="color:green">重置</button>
             </div>
         </div>
     </div>
