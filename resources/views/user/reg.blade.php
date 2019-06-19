@@ -22,7 +22,7 @@
 <h1 class="txtCenter" style="color:green">注册</h1>
 <form class="layui-form" style="text-align: center;vertical-align: middle;">
 
-    <div class="layui-form-item" align="center">
+    <div class="layui-form-item" style="text-align: center;vertical-align: middle;">
         <label class="layui-form-label" style="text-align: center;vertical-align: middle;">手机号</label>
         <div class="layui-input-inline" style="text-align: center;vertical-align: middle;">
             <input type="text" name="mobile" required  lay-verify="required" placeholder="请输入手机号"
@@ -30,14 +30,14 @@
                    class="layui-input" id ="mo">
         </div>
     </div>
-    <div class="layui-form-item" align="center">
+    <div class="layui-form-item" style="text-align: center;vertical-align: middle;">
         <label class="layui-form-label" style="text-align: center;vertical-align: middle">密码</label>
         <div class="layui-input-inline" style="text-align: center;vertical-align: middle">
             <input type="password" name="password" required lay-verify="required" placeholder="请输入密码"
                    autocomplete="off" style="text-align: center;vertical-align: middle;" class="layui-input" id="psw">
         </div>
 
-        <div class="layui-form-item" align="center">
+        <div class="layui-form-item" style="text-align: center;vertical-align: middle;">
             <div class="layui-input-block">
                 <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
                 <button type="reset" class="layui-btn layui-btn-primary" style="color:green">重置</button>
