@@ -24,6 +24,9 @@ class UserController extends Controller
         if (empty($mobile)){
             return $this->error('请填写手机号');
         }
+        if(!preg_match('/^\d{11}$/',$mobile)){
+            return $this->error('请填写正确的手机号');
+        }
         if(empty($password)){
             return $this->error('密码不能为空');
         }
