@@ -7,42 +7,8 @@
     <h1>注册</h1>
     <link rel="stylesheet" href="../layui/css/layui.css">
 </head>
+
 <body>
-
-@charset "utf-8";
-* {
-margin: 0;
-padding: 0;
-}
-body {
-text-decoration: none;
-text-align: center;
-background: #23262E;
-}
-.login-main {
-margin: 0 auto;
-}
-.layui-elip {
-font-size: 24px;
-color: #fff;
-text-decoration: none;
-font-weight: bold;
-margin-top: 100px;
-margin-bottom: 30px;
-}
-.layui-form-item {
-margin: 0 auto;
-width: 190px;
-text-align: center;
-}
-
-.line1 {
-height: 50px;
-line-height: 50px;
-
-}
-
-
 <!-- 你的HTML代码 -->
 <form class="layui-form" >
 
@@ -103,8 +69,39 @@ line-height: 50px;
             return false;
         });
     });
-
-
 </script>
+
+@charset "utf-8";
+* {
+margin: 0;
+padding: 0;
+}
+body {
+text-decoration: none;
+text-align: center;
+background: #23262E;
+}
+.login-main {
+margin: 0 auto;
+}
+.layui-elip {
+font-size: 24px;
+color: #fff;
+text-decoration: none;
+font-weight: bold;
+margin-top: 100px;
+margin-bottom: 30px;
+}
+.layui-form-item {
+margin: 0 auto;
+width: 190px;
+text-align: center;
+}
+
+.line1 {
+height: 50px;
+line-height: 50px;
+
+}
 </body>
 </html>
