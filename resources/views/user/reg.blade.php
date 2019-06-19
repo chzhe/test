@@ -85,9 +85,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>注册页</title>
-    <link rel="stylesheet" href="../frame/layui/css/layui.css">
-    <link rel="stylesheet" href="../frame/static/css/style.css">
-    <link rel="icon" href="../frame/static/image/code.png">
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <link rel="stylesheet" href="../layui/css/style.css">
+    <link rel="icon" href="../layui/image/code.png">
 </head>
 <body>
 
@@ -149,7 +149,7 @@
 </div>
 
 
-<script src="../frame/layui/layui.js"></script>
+<script src="../layui/layui.js"></script>
 <script>
     layui.use(['form','jquery','layer'], function () {
         var form   = layui.form;
