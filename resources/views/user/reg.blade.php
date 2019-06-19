@@ -86,7 +86,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>注册页</title>
     <link rel="stylesheet" href="../layui/css/layui.css">
-    <link rel="stylesheet" href="../layui/css/style.css">
+    <link rel="stylesheet" href="../layui/css/layui.css">
     <link rel="icon" href="../layui/image/code.png">
 </head>
 <body>
