@@ -92,13 +92,13 @@
 <body>
 
 <div class="login-main">
-    <header class="layui-elip" style="width: 82%">注册页</header>
+    <header class="layui-elip" style="width: 200%">注册页</header>
 
     <!-- 表单选项 -->
     <form class="layui-form">
         <div class="layui-input-inline">
             <!-- 用户名 -->
-            <div class="layui-inline" style="width: 85%">
+            <div class="layui-inline" style="width: 200%">
                 <input type="text" id="user" name="account" required  lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
             </div>
             <!-- 对号 -->
@@ -112,7 +112,7 @@
         </div>
         <!-- 密码 -->
         <div class="layui-input-inline">
-            <div class="layui-inline" style="width: 85%">
+            <div class="layui-inline" style="width: 200%">
                 <input type="password" id="pwd" name="password" required  lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
             </div>
             <!-- 对号 -->
@@ -126,7 +126,7 @@
         </div>
         <!-- 确认密码 -->
         <div class="layui-input-inline">
-            <div class="layui-inline" style="width: 85%">
+            <div class="layui-inline" style="width: 200%">
                 <input type="password" id="rpwd" name="repassword" required  lay-verify="required" placeholder="请确认密码" autocomplete="off" class="layui-input">
             </div>
             <!-- 对号 -->
@@ -140,11 +140,11 @@
         </div>
 
 
-        <div class="layui-input-inline login-btn" style="width: 85%">
+        <div class="layui-input-inline login-btn" style="width: 200%">
             <button type="submit" lay-submit lay-filter="sub" class="layui-btn">注册</button>
         </div>
-        <hr style="width: 85%" />
-        <p style="width: 85%"><a href="login.html" class="fl">已有账号？立即登录</a><a href="javascript:;" class="fr">忘记密码？</a></p>
+        <hr style="width: 200%" />
+        <p style="width: 200%"><a href="login.html" class="fl">已有账号？立即登录</a><a href="javascript:;" class="fr">忘记密码？</a></p>
     </form>
 </div>
 
