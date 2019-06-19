@@ -15,7 +15,7 @@
     }
     body{
         background-image: url(../layui/images/face/72.jpg);
-        background-color:#cccccc;
+
     }
 
 
