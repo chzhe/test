@@ -6,44 +6,12 @@
     <title>test</title>
     <h1>注册</h1>
     <link rel="stylesheet" href="../layui/css/layui.css">
-
-    * {
-    margin: 0;
-    padding: 0;
-    }
-    body {
-    text-decoration: none;
-    text-align: center;
-    background: #23262E;
-    }
-    .layui-form {
-    margin: 0 auto;
-    }
-    .layui-elip {
-    font-size: 24px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 100px;
-    margin-bottom: 30px;
-    }
-    .layui-form-item {
-    margin: 0 auto;
-    width: 190px;
-    text-align: center;
-    }
-
-    .line1 {
-    height: 50px;
-    line-height: 50px;
-
-    }
 </head>
 
 <body>
 <!-- 你的HTML代码 -->
 <form class="layui-form" >
-    <header class="layui-elip">后台登录</header>
+
     <div class="layui-form-item">
         <label class="layui-form-label">手机号</label>
         <div class="layui-input-block">
@@ -102,7 +70,5 @@
         });
     });
 </script>
-
-
 </body>
 </html>
