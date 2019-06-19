@@ -99,7 +99,7 @@
         <div class="layui-input-inline">
             <!-- 用户名 -->
             <div class="layui-inline" style="width: 200%">
-                <input type="text" id="user" name="account" required  lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
+                <input type="text" id="user" name="mobile" required  lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
             </div>
             <!-- 对号 -->
             <div class="layui-inline">
@@ -144,61 +144,63 @@
             <button type="submit" lay-submit lay-filter="sub" class="layui-btn">注册</button>
         </div>
         <hr style="width: 200%" />
-        <p style="width: 200%"><a href="login.html" class="fl">已有账号？立即登录</a><a href="javascript:;" class="fr">忘记密码？</a></p>
+        <p style="width: 200%"><a href="login" class="fl">已有账号？立即登录</a><a href="javascript:;" class="fr">忘记密码？</a></p>
     </form>
 </div>
 
 
 <script src="../frame/layui/layui.js"></script>
-<script type="text/javascript">
+<script>
     layui.use(['form','jquery','layer'], function () {
         var form   = layui.form;
         var $      = layui.jquery;
         var layer  = layui.layer;
-        //添加表单失焦事件
-        //验证表单
-        $('#user').blur(function() {
-            var user = $(this).val();
+        // //添加表单失焦事件
+        // //验证表单
+        // $('#user').blur(function() {
+        //     var user = $(this).val();
 
             //alert(user);
-            $.ajax({
-                url:'checkUser.php',
-                type:'post',
-                dataType:'text',
-                data:{user:user},
-                //验证用户名是否可用
-                success:function(data){
-                    if (data == 1) {
-                        $('#ri').removeAttr('hidden');
-                        $('#wr').attr('hidden','hidden');
 
 
-                    } else {
-                        $('#wr').removeAttr('hidden');
-                        $('#ri').attr('hidden','hidden');
-                        layer.msg('当前用户名已被占用! ')
-
-                    }
-
-                }
-            })
-
-        });
+        //     $.ajax({
+        //         url:'register',
+        //         type:'post',
+        //         dataType:'json',
+        //         data:pram,
+        //         //验证用户名是否可用
+        //         success:function(data){
+        //             if (data == 1) {
+        //                 $('#ri').removeAttr('hidden');
+        //                 $('#wr').attr('hidden','hidden');
+        //
+        //
+        //             } else {
+        //                 $('#wr').removeAttr('hidden');
+        //                 $('#ri').attr('hidden','hidden');
+        //                 layer.msg('当前用户名已被占用! ')
+        //
+        //             }
+        //
+        //         }
+        //     })
+        //
+        // });
 
         // you code ...
         // 为密码添加正则验证
-        $('#pwd').blur(function() {
-            var reg = /^[\w]{6,12}$/;
-            if(!($('#pwd').val().match(reg))){
-                //layer.msg('请输入合法密码');
-                $('#pwr').removeAttr('hidden');
-                $('#pri').attr('hidden','hidden');
-                layer.msg('请输入合法密码');
-            }else {
-                $('#pri').removeAttr('hidden');
-                $('#pwr').attr('hidden','hidden');
-            }
-        });
+        // $('#pwd').blur(function() {
+        //     var reg = /^[\w]{6,12}$/;
+        //     if(!($('#pwd').val().match(reg))){
+        //         //layer.msg('请输入合法密码');
+        //         $('#pwr').removeAttr('hidden');
+        //         $('#pri').attr('hidden','hidden');
+        //         layer.msg('请输入合法密码');
+        //     }else {
+        //         $('#pri').removeAttr('hidden');
+        //         $('#pwr').attr('hidden','hidden');
+        //     }
+        // });
 
         //验证两次密码是否一致
         $('#rpwd').blur(function() {
@@ -214,21 +216,22 @@
 
         //
         //添加表单监听事件,提交注册信息
-        form.on('submit(sub)', function() {
+
+        form.on('submit(sub)', function(data) {
+                var pram = data.field;
+
             $.ajax({
-                url:'reg.php',
+                url:'register',
                 type:'post',
-                dataType:'text',
-                data:{
-                    user:$('#user').val(),
-                    pwd:$('#pwd').val(),
-                },
-                success:function(data){
-                    if (data == 1) {
+                dataType:'json',
+                data: pram,
+                success:function(response){
+                    if (response.code==200) {
                         layer.msg('注册成功');
+                        self.location.href="{{url('login')}}";
                         ///location.href = "login.html";
                     }else {
-                        layer.msg('注册失败');
+                        layer.msg(response.data);
                     }
                 }
             })
