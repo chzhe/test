@@ -20,7 +20,7 @@
 <!-- 你的HTML代码 -->
 
 <h1 class="txtCenter" style="color:green">注册</h1>
-<form class="layui-form" >
+<form class="layui-form" style="text-align: center;vertical-align: middle;">
 
     <div class="layui-form-item" align="center">
         <label class="layui-form-label" style="text-align: center;vertical-align: middle;">手机号</label>
