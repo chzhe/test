@@ -12,6 +12,9 @@
     .txtCenter{
         text-align:center;
     }
+    body{
+        background-color: #3F3F3F;
+    }
 
 
 </style>
