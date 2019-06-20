@@ -83,8 +83,8 @@
                         }else{
                             layer.msg(response.data)
                         }
-                        if(response.code==200){
-                            document.getElementById("btn2").innerText = pram.mobile+"已登录";}
+
+                            document.getElementById("btn2").innerText = pram.mobile+"已登录";
                     }
                 });
                 return false;
