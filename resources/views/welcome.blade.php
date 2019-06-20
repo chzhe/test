@@ -99,12 +99,7 @@
 <script src="../layui/layui.js"></script>
 <script>
 
-       layer.open({
-           type: 1,
-           skin: 'layui-layer-rim', //加上边框
-           area: ['420px', '240px'], //宽高
-           content: $('oh no'),
-       });
+
 
 
 
@@ -112,12 +107,12 @@
         var layer = layui.layer
             , form = layui.form
             , $ = layui.jquery;
-        // layer.open({
-        //     type: 1,
-        //     skin: 'layui-layer-rim', //加上边框
-        //     area: ['420px', '240px'], //宽高
-        //     content: 'html内容'
-        // });
+        layer.open({
+            type: 1,
+            skin: 'layui-layer-rim', //加上边框
+            area: ['420px', '240px'], //宽高
+            content: 'html内容'
+        });
 
     });
 
