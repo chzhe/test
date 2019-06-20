@@ -77,11 +77,13 @@
                     success : function (response) {
                         if(response.code==200){
                             layer.msg ('登录成功');
-                            var r = self.location.reload();
-                             r =function () {
-                                     self.document.getElementById("btn2").innerText = "已登录";
-                                     self.document.getElementById("btn2").onclick = "";
-                             };
+                         self.location.reload(function () {
+                             self.document.getElementById("btn2").innerText = "已登录";
+                             self.document.getElementById("btn2").onclick = "";
+                         });
+
+
+
                             //     self.document.getElementById("btn2").innerText = "已登录";
                             //     self.document.getElementById("btn2").onclick = "";
 
