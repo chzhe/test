@@ -16,7 +16,7 @@
 <button id ="btn2" class="layui-btn" onclick="click()">登录</button>
 <div id = 'lo' style="display: none;">
     <p class="txtCenter" style="color:green;align-content: center;text-align: center">登录</p>
-    <div style="width: 650px; position: relative; left: 43%;">
+    <div>
         <form class="layui-form">
 
             <div class="layui-form-item">
