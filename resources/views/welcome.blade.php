@@ -66,7 +66,7 @@
 </head>
 <body>
 <button id ="btn1" class="layui-btn" onclick="click()">请先登录</button>
-<div id = 'test' style="display: block">
+<div id = 'test' style="display: none">
     <h1 class="txtCenter" style="color:green">注册</h1>
     <div style="width: 650px; position: relative; left: 43%;">
         <form class="layui-form">
