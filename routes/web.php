@@ -22,4 +22,4 @@ Route::post('postLogin','Admin\UserController@postLogin');//登录接口
 Route::get('logout','Admin\UserController@logout');//登出接口
 Route::post('register','Admin\UserController@register');//注册接口
 
-Route::get('main','Admin\UserController@main');//主页
+Route::get('lo','Admin\UserController@main');//登录页
