@@ -141,14 +141,18 @@
         //     content: 'test'
         // });
         $("#btn1").click(function () {
-            layer.open({
-                type: 1,
-                skin: 'layui-layer-rim', //加上边框
-                area: ['420px', '300px'], //宽高
-                content: #test
+            if(('#btn1').click().value=0){
+                #test.hidden;
+            }else {
+                layer.open({
+                    type: 1,
+                    skin: 'layui-layer-rim', //加上边框
+                    area: ['420px', '300px'], //宽高
+                    content: #test
 
 
-            });
+                });
+            }
         })
 
     })
