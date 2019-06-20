@@ -151,7 +151,7 @@
                     content: $("#test").html(),
                     end:function () {
                         layer.closeAll();
-                        location.reload();
+                        // location.reload();
                     }
 
 
