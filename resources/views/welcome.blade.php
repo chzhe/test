@@ -165,7 +165,7 @@
                 data: pram,      //data {username:$('#username').val(),password:$('#password').val()}
                 success: function (response) {     //success callback
                     if(response.code==200){
-                        layer.msg('注册成功')
+                        layer.msg('注册成功');
                         self.location.href="{{url('main')}}";
                     }else{
                         layer.msg(response.data)
