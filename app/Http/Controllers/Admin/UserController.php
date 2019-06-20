@@ -10,12 +10,12 @@ use App\User;
 
 class UserController extends Controller
 {
-    public function reg(){
-        return view('user.reg');
-    }
-    public function login(){
-        return view('user.login');
-    }
+//    public function reg(){
+//        return view('user.reg');
+//    }
+//    public function login(){
+//        return view('user.login');
+//    }
     public function main(){
         return view('main');
     }
