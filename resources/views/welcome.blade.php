@@ -141,8 +141,8 @@
         //     content: 'test'
         // });
         $("#btn1").click(function () {
-            if($(#test).css("display")=="block"){
-               $(#test).hide();
+            // if($(#test).css("display")=="block"){
+            //    $(#test).hide();
 
                 layer.open({
                     type: 1,
@@ -152,7 +152,7 @@
 
 
                 });
-            }
+            // }
         })
 
     })
