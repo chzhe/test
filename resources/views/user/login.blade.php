@@ -16,7 +16,7 @@
     <div class="layui-form-item">
         <label class="layui-form-label">用户名</label>
         <div class="layui-input-block">
-            <input type="text" name="mobile" required  lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input" style="text-align: left">
+            <input type="text" name="mobile" required  lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
         </div>
     </div>
     <div class="layui-form-item">
