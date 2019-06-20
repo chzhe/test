@@ -154,8 +154,28 @@
                 });
             // }
         })
+        form.on('submit(formDemo)', function (data) {
+            var pram = data.field;  //json
 
-    })
+            $.ajax({
+                url: 'register',     //api address
+                type: 'post',//POST || GET
+                dataType: 'json', //数据类型
+                data: pram,      //data {username:$('#username').val(),password:$('#password').val()}
+                success: function (response) {     //success callback
+                    if(response.code==200){
+                        layer.msg('注册成功')
+                        self.location.href="{{url('login')}}";
+                    }else{
+                        layer.msg(response.data)
+
+                    }
+                }
+            });
+            return false;
+        });
+
+    });
     {{--self.location.href="{{url('reg')}}"--}}
 </script>
 
