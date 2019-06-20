@@ -78,7 +78,7 @@
                         if(response.code==200){
                             layer.msg ('登录成功');
                          self.location.reload();
-
+                         document.getElementById("btn2").hidden;
 
                      // window.document.getElementById("btn2").innerText = "yidenglu";
 
