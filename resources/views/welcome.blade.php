@@ -107,11 +107,15 @@
         var layer = layui.layer
             , form = layui.form
             , $ = layui.jquery;
+
+        var index = layer.open({
+            content: 'test'
+        });
         layer.open({
             type: 1,
             skin: 'layui-layer-rim', //加上边框
             area: ['420px', '240px'], //宽高
-            content: 'html内容'
+            content: $('#test')
         });
 
     });
