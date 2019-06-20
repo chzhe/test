@@ -65,8 +65,8 @@
     </style>
 </head>
 <body>
-<button id ="btn1" class="layui-btn" onclick="click()">请先登录</button>
-<div id = 'test' style="display: none">
+<button id ="btn1" class="layui-btn" onclick="click()" style="color: #20a53a">请先注册</button>
+<div id = 'test' style="background-color: #2a88bd" style="display: none">
     {{--<h1 class="txtCenter" style="color:green">注册</h1>--}}
     <div style="width: 650px; position: relative; left: 43%;">
         <form class="layui-form">
@@ -165,7 +165,7 @@
                 success: function (response) {     //success callback
                     if(response.code==200){
                         layer.msg('注册成功')
-                        self.location.href="{{url('login')}}";
+                        self.location.href="{{url('main')}}";
                     }else{
                         layer.msg(response.data)
 
