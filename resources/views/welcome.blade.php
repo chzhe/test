@@ -66,35 +66,35 @@
 </head>
 <body>
 <button class="layui-btn" onclick="click()">请先登录</button>
-<div id = 'test'>
-    <h1 class="txtCenter" style="color:green">注册</h1>
-    <div style="width: 650px; position: relative; left: 43%;">
-        <form class="layui-form">
+{{--<div id = 'test'>--}}
+    {{--<h1 class="txtCenter" style="color:green">注册</h1>--}}
+    {{--<div style="width: 650px; position: relative; left: 43%;">--}}
+        {{--<form class="layui-form">--}}
 
-            <div class="layui-form-item">
-                <label class="layui-form-label" style="color: #d4d4d4;">手机号</label>
-                <div class="layui-input-inline">
-                    <input type="text" name="mobile" required  lay-verify="required" placeholder="请输入手机号"
-                           autocomplete="off" class="layui-input" id ="mo">
-                </div>
-            </div>
-            <div class="layui-form-item">
-                <label class="layui-form-label" style="color: #d4d4d4;">密码</label>
-                <div class="layui-input-inline" style=>
-                    <input type="password" name="password" required lay-verify="required" placeholder="请输入密码"
-                           autocomplete="off" class="layui-input" id="psw">
-                </div>
+            {{--<div class="layui-form-item">--}}
+                {{--<label class="layui-form-label" style="color: #d4d4d4;">手机号</label>--}}
+                {{--<div class="layui-input-inline">--}}
+                    {{--<input type="text" name="mobile" required  lay-verify="required" placeholder="请输入手机号"--}}
+                           {{--autocomplete="off" class="layui-input" id ="mo">--}}
+                {{--</div>--}}
+            {{--</div>--}}
+            {{--<div class="layui-form-item">--}}
+                {{--<label class="layui-form-label" style="color: #d4d4d4;">密码</label>--}}
+                {{--<div class="layui-input-inline" style=>--}}
+                    {{--<input type="password" name="password" required lay-verify="required" placeholder="请输入密码"--}}
+                           {{--autocomplete="off" class="layui-input" id="psw">--}}
+                {{--</div>--}}
 
-                <div class="layui-form-item">
-                    <div class="layui-input-block">
-                        <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
-                        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
-</div>
+                {{--<div class="layui-form-item">--}}
+                    {{--<div class="layui-input-block">--}}
+                        {{--<button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>--}}
+                        {{--<button type="reset" class="layui-btn layui-btn-primary">重置</button>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</form>--}}
+    {{--</div>--}}
+{{--</div>--}}
 <div class="flex-center position-ref full-height">
     @if (Route::has('login'))
         <div class="top-right links">
@@ -144,7 +144,33 @@
             type: 1,
             skin: 'layui-layer-rim', //加上边框
             area: ['420px', '240px'], //宽高
-            content: $('#test')
+            content: '<h1 class="txtCenter" style="color:green">注册</h1>\n' +
+                '    <div style="width: 650px; position: relative; left: 43%;">\n' +
+                '        <form class="layui-form">\n' +
+                '\n' +
+                '            <div class="layui-form-item">\n' +
+                '                <label class="layui-form-label" style="color: #d4d4d4;">手机号</label>\n' +
+                '                <div class="layui-input-inline">\n' +
+                '                    <input type="text" name="mobile" required  lay-verify="required" placeholder="请输入手机号"\n' +
+                '                           autocomplete="off" class="layui-input" id ="mo">\n' +
+                '                </div>\n' +
+                '            </div>\n' +
+                '            <div class="layui-form-item">\n' +
+                '                <label class="layui-form-label" style="color: #d4d4d4;">密码</label>\n' +
+                '                <div class="layui-input-inline" style=>\n' +
+                '                    <input type="password" name="password" required lay-verify="required" placeholder="请输入密码"\n' +
+                '                           autocomplete="off" class="layui-input" id="psw">\n' +
+                '                </div>\n' +
+                '\n' +
+                '                <div class="layui-form-item">\n' +
+                '                    <div class="layui-input-block">\n' +
+                '                        <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>\n' +
+                '                        <button type="reset" class="layui-btn layui-btn-primary">重置</button>\n' +
+                '                    </div>\n' +
+                '                </div>\n' +
+                '            </div>\n' +
+                '        </form>\n' +
+                '    </div>'
         });
 
     });
