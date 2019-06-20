@@ -13,7 +13,7 @@
 
 </style>
 <body>
-<button id ="btn2" class="layui-btn" onclick="click()">登录</button>
+<button id ="btn2" class="layui-btn" onclick="click()" style="display: block">登录</button>
 <div id = 'lo' style="display: none;">
     <p class="txtCenter" style="color:green;align-content: center;text-align: center">登录</p>
     <div>
@@ -77,7 +77,6 @@
                     success : function (response) {
                         if(response.code==200){
                             layer.msg ('登录成功');
-                            self.document.getElementById("btn2").innerText = "已登录";
                          self.location.reload();
 
 
