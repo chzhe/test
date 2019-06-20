@@ -94,4 +94,21 @@
     </div>
 </div>
 </body>
+
+<script src="../layui/layui.js"></script>
+<script>
+    layui.use(['layer', 'form'], function() {
+        var layer = layui.layer
+            , form = layui.form
+            , $ = layui.jquery;
+        layer.open({
+            type: 1,
+            skin: 'layui-layer-rim', //加上边框
+            area: ['420px', '240px'], //宽高
+            content: 'html内容'
+        });
+
+    });
+</script>
+
 </html>
