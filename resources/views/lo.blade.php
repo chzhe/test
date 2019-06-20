@@ -78,16 +78,15 @@
                         if(response.code==200){
                             layer.msg ('登录成功');
                          self.location.reload();
-                        after (self.location.reload());
-                        self.document.getElementById("btn2").innerText="yidenglu";
+
+
                      // window.document.getElementById("btn2").innerText = "yidenglu";
 
 
                             //     self.document.getElementById("btn2").innerText = "已登录";
                             //     self.document.getElementById("btn2").onclick = "";
 
-
-
+$("#btn2").reset(innerHTML="yidengl",onclick="");
 
 
                             {{--self.location.href="{{url('main')}}";--}}
@@ -100,6 +99,7 @@
                 });
                 return false;
             });
+
         });
 
 </script>
