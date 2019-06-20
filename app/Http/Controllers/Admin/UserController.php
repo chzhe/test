@@ -17,7 +17,7 @@ class UserController extends Controller
 //        return view('user.login');
 //    }
     public function lo(){
-        return view('main');
+        return view('lo');
     }
 
     public function register(Request $request){
