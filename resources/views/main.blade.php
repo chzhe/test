@@ -13,7 +13,7 @@
     {{----}}
 {{--</style>--}}
 <body>
-<button id ="btn2" class="layui-btn" onclick="click()" style="color: #20a53a">登录</button>
+<button id ="btn2" class="layui-btn" onclick="click()" style="color: #2a88bd">登录</button>
 <div id = 'lo' style="display: none;">
     <p class="txtCenter" style="color:green;align-content: center;text-align: center">登录</p>
     <div style="width: 650px; position: relative; left: 43%;">
