@@ -77,7 +77,8 @@
                     success : function (response) {
                         if(response.code==200){
                             layer.msg ('登录成功');
-                         self.location.reload().document.getElementById("btn2").innerText = yidenglu;
+                         self.location.reload();
+                         new window.document.getElementById("btn2").innerText = "yidenglu";
                      // window.document.getElementById("btn2").innerText = "yidenglu";
 
 
