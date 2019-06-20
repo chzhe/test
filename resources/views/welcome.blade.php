@@ -148,7 +148,7 @@
                     type: 1,
                     skin: 'layui-layer-rim', //加上边框
                     area: ['420px', '300px'], //宽高
-                    content: $("#test"),
+                    content: $("#test").html(),
                     end:function () {
                         layer.closeAll();
                         // location.reload();
