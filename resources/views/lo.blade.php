@@ -76,8 +76,9 @@
                     data : pram,
                     success : function (response) {
                         if(response.code==200){
-                            layer.msg ('登录成功');
+
                             self.location.reload();
+                            layer.msg ('登录成功');
                             document.getElementById("btn2").innerHTML = pram.mobile+"已登录";
                             {{--self.location.href="{{url('main')}}";--}}
                         }else{
