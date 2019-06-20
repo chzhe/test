@@ -152,7 +152,7 @@
 
 
                 });
-            parent.layer.closeAll();
+            parent.layer.close();
             // }
         });
         form.on('submit(formDemo)', function (data) {
