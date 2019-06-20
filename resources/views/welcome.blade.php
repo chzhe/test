@@ -142,7 +142,7 @@
         // });
         $("#btn1").click(function () {
             if(('#btn1').click().value=0){
-                #test.hidden;
+                #test.hide();
             }else {
                 layer.open({
                     type: 1,
