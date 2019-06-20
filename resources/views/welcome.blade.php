@@ -142,13 +142,13 @@
         // });
         $("#btn1").click(function () {
             if(('#btn1').click().value=0){
-                #test.hide();
+               $(#test).hide();
             }else {
                 layer.open({
                     type: 1,
                     skin: 'layui-layer-rim', //加上边框
                     area: ['420px', '300px'], //宽高
-                    content: #test
+                    content: $(#test)
 
 
                 });
