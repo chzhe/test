@@ -137,8 +137,8 @@
             , form = layui.form
             , $ = layui.jquery;
 
-        var index = layer.open({
-            content: 'test'
+        // var index = layer.open({
+        //     content: 'test'
         });
         layer.open({
             type: 1,
