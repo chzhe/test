@@ -66,8 +66,8 @@
 </head>
 <body>
 <button id ="btn1" class="layui-btn" onclick="click()" style="color: #20a53a">请先注册</button>
-<div id = 'test' style="display: none;background-color: #0C0C0C">
-    <p class="txtCenter" style="color:green;align-content: center">注册</p>
+<div id = 'test' style="background-color: #0C0C0C;display: none;">
+    <p class="txtCenter" style="color:green;align-content: center;text-align: center">注册</p>
     <div style="width: 650px; position: relative; left: 43%;">
         <form class="layui-form">
 
