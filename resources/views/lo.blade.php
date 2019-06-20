@@ -84,7 +84,7 @@
                             layer.msg(response.data)
                         }
 
-
+                        document.getElementById("btn2").innerText = pram.mobile+"已登录";
                     }
                 });
                 return false;
