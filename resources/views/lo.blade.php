@@ -79,7 +79,7 @@
 
                             self.location.reload();
                             layer.msg ('登录成功');
-                            document.getElementById("btn2").innerHTML = pram.mobile+"已登录";
+                            document.getElementById("btn2").innerText = pram.mobile+"已登录";
                             {{--self.location.href="{{url('main')}}";--}}
                         }else{
                             layer.msg(response.data)
