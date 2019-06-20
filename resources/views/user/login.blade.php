@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="../layui/css/layui.css">
 </head>
 <body>
+
+<div style="width: 650px; position: relative; left: 43%;">
+    <p class="txtCenter" style="color:green;align-content: center;text-align: center">登录</p>
 <form class="layui-form" action="">
+
     <div class="layui-form-item">
         <label class="layui-form-label">用户名</label>
         <div class="layui-input-block">
