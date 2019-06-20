@@ -98,14 +98,14 @@
 
 <script src="../layui/layui.js"></script>
 <script>
-    $(document).ready(function () {
-        layer.open({
-            type: 1,
-            skin: 'layui-layer-rim', //加上边框
-            area: ['420px', '240px'], //宽高
-            content: 'html内容'
-        });
-    });
+   function click() {
+       layer.open({
+           type: 1,
+           skin: 'layui-layer-rim', //加上边框
+           area: ['420px', '240px'], //宽高
+           content: 'html内容'
+       });
+   }
 
 
     layui.use(['layer', 'form'], function() {
