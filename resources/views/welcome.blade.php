@@ -144,36 +144,10 @@
             type: 1,
             skin: 'layui-layer-rim', //加上边框
             area: ['420px', '300px'], //宽高
-            content: '<h1 class="txtCenter" style="color:green">注册</h1>\n' +
-                '    <div style="width: 650px; position: relative; left: 43%;">\n' +
-                '        <form class="layui-form">\n' +
-                '\n' +
-                '            <div class="layui-form-item">\n' +
-                '                <label class="layui-form-label" style="color: #d4d4d4;">手机号</label>\n' +
-                '                <div class="layui-input-inline">\n' +
-                '                    <input type="text" name="mobile" required  lay-verify="required" placeholder="请输入手机号"\n' +
-                '                           autocomplete="off" class="layui-input" id ="mo">\n' +
-                '                </div>\n' +
-                '            </div>\n' +
-                '            <div class="layui-form-item">\n' +
-                '                <label class="layui-form-label" style="color: #d4d4d4;">密码</label>\n' +
-                '                <div class="layui-input-inline" style=>\n' +
-                '                    <input type="password" name="password" required lay-verify="required" placeholder="请输入密码"\n' +
-                '                           autocomplete="off" class="layui-input" id="psw">\n' +
-                '                </div>\n' +
-                '\n' +
-                '                <div class="layui-form-item">\n' +
-                '                    <div class="layui-input-block">\n' +
-                '                        <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>\n' +
-                '                        <button type="reset" class="layui-btn layui-btn-primary">重置</button>\n' +
-                '                    </div>\n' +
-                '                </div>\n' +
-                '            </div>\n' +
-                '        </form>\n' +
-                '    </div>'
-        });
+            content: "{{url('reg')}}"
 
-    });
+        });
+    })
 
 </script>
 
