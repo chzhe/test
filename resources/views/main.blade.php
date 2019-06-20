@@ -14,7 +14,7 @@
 
 </style>
 <body>
-<p style="color: #411c0e;text-align: center;size: A5">That's All.</p>
+<h1 style="color: #411c0e">That's All.</h1>
 
 
 <script src="../layui/layui.js"></script>
