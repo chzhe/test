@@ -6,12 +6,12 @@
     <title>Start</title>
     <link rel="stylesheet" href="../layui/css/layui.css">
 </head>
-<style>
-    body{
-        background-image: url(../layui/images/face/73.jpg);
-    }
-    
-</style>
+{{--<style>--}}
+    {{--body{--}}
+        {{--background-image: url(../layui/images/face/73.jpg);--}}
+    {{--}--}}
+    {{----}}
+{{--</style>--}}
 <body>
 <button id ="btn2" class="layui-btn" onclick="click()" style="color: #20a53a">登录</button>
 <div id = 'lo' style="display: none;">
