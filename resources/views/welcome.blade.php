@@ -65,7 +65,7 @@
     </style>
 </head>
 <body>
-<div class="layui-btn">请登录</div>
+<div class="layui-btn" style="color: #20a53a" onclick="click()">请登录</div>
 <div class="flex-center position-ref full-height">
     @if (Route::has('login'))
         <div class="top-right links">
