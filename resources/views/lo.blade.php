@@ -78,8 +78,8 @@
                         if(response.code==200){
                             layer.msg ('登录成功');
                             self.location.reload();
-
-                            document.getElementById("btn2").innerText = pram.mobile+"已登录";
+                           if(response.code==200){
+                            document.getElementById("btn2").innerText = pram.mobile+"已登录";}
                             {{--self.location.href="{{url('main')}}";--}}
                         }else{
                             layer.msg(response.data)
