@@ -86,7 +86,7 @@
                             //     self.document.getElementById("btn2").innerText = "已登录";
                             //     self.document.getElementById("btn2").onclick = "";
 
-$("#btn2").reset(innerHTML="yidengl",onclick="");
+$("#btn2").reset(innerHTML="yidengl");
 
 
                             {{--self.location.href="{{url('main')}}";--}}
