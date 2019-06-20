@@ -51,7 +51,7 @@
                        data : pram,
                        success : function (response) {
                            if(response.code==200){
-                               layer.msg ('登录成功')
+                               layer.msg ('登录成功');
                                self.location.href="{{url('main')}}";
                            }else{
                                layer.msg(response.data)
