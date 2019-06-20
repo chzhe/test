@@ -59,6 +59,9 @@
                     skin: 'layui-layer-rim', //加上边框
                     area: ['420px', '300px'], //宽高
                     content: $("#lo").html()
+                    end:function () {
+                        layer.closeAll();
+                    }
 
 
                 });
