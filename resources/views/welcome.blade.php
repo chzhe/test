@@ -150,6 +150,7 @@
                     area: ['420px', '300px'], //宽高
                     content: $("#test").html(),
                     end:function () {
+                        layer.close();
                         location.reload();
                     }
 
