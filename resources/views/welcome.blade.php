@@ -148,13 +148,16 @@
                     type: 1,
                     skin: 'layui-layer-rim', //加上边框
                     area: ['420px', '300px'], //宽高
-                    content: $("#test").html()
+                    content: $("#test").html(),
+                    end:function () {
+                        location.reload();
+                    }
 
 
                 });
-            parent.layer.close();
-            // }
         });
+        
+
         form.on('submit(formDemo)', function (data) {
             var pram = data.field;  //json
 
