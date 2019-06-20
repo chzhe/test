@@ -66,20 +66,20 @@
 </head>
 <body>
 <button id ="btn1" class="layui-btn" onclick="click()" style="color: #20a53a">请先注册</button>
-<div id = 'test' style="background-color: #0C0C0C;display: none;">
+<div id = 'test' style="display: none;">
     <p class="txtCenter" style="color:green;align-content: center;text-align: center">注册</p>
     <div style="width: 650px; position: relative; left: 43%;">
         <form class="layui-form">
 
             <div class="layui-form-item">
-                <label class="layui-form-label" style="color: #d4d4d4;">手机号</label>
+                <label class="layui-form-label" style="color: #20a53a;">手机号</label>
                 <div class="layui-input-inline">
                     <input type="text" name="mobile" required  lay-verify="required" placeholder="请输入手机号"
                            autocomplete="off" class="layui-input" id ="mo">
                 </div>
             </div>
             <div class="layui-form-item">
-                <label class="layui-form-label" style="color: #d4d4d4;">密码</label>
+                <label class="layui-form-label" style="color: #20a53a;">密码</label>
                 <div class="layui-input-inline" style=>
                     <input type="password" name="password" required lay-verify="required" placeholder="请输入密码"
                            autocomplete="off" class="layui-input" id="psw">
