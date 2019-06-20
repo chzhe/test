@@ -152,8 +152,9 @@
 
 
                 });
+            parent.layer.closeAll();
             // }
-        })
+        });
         form.on('submit(formDemo)', function (data) {
             var pram = data.field;  //json
 
