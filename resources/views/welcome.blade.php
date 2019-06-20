@@ -66,7 +66,7 @@
 </head>
 <body>
 <button id ="btn1" class="layui-btn" onclick="click()">请先登录</button>
-<div id = 'test' style="display: block">
+<div id = 'test'>
     <h1 class="txtCenter" style="color:green">注册</h1>
     <div style="width: 650px; position: relative; left: 43%;">
         <form class="layui-form">
@@ -148,7 +148,7 @@
                     type: 1,
                     skin: 'layui-layer-rim', //加上边框
                     area: ['420px', '300px'], //宽高
-                    content: $(#test)
+                    content: #test
 
 
                 });
