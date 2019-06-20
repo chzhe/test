@@ -139,11 +139,11 @@
 
         // var index = layer.open({
         //     content: 'test'
-        });
+        // });
         layer.open({
             type: 1,
             skin: 'layui-layer-rim', //加上边框
-            area: ['420px', '240px'], //宽高
+            area: ['600px', '240px'], //宽高
             content: '<h1 class="txtCenter" style="color:green">注册</h1>\n' +
                 '    <div style="width: 650px; position: relative; left: 43%;">\n' +
                 '        <form class="layui-form">\n' +
