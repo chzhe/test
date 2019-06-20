@@ -98,7 +98,7 @@
 
 <script src="../layui/layui.js"></script>
 <script>
-
+    <button class="layui-btn" onclick="click()">请先登录</button>
        layer.open({
            type: 1,
            skin: 'layui-layer-rim', //加上边框
