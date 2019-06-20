@@ -72,17 +72,15 @@
         <form class="layui-form">
 
             <div class="layui-form-item">
-                <label class="layui-form-label" style="color: #20a53a;">手机号</label>
+                <label class="layui-form-label">手机号</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="mobile" required  lay-verify="required" placeholder="请输入手机号"
-                           autocomplete="off" class="layui-input" id ="mo">
+                    <input type="text" name="mobile" required  lay-verify="required" placeholder="请输入手机号" autocomplete="off" class="layui-input">
                 </div>
             </div>
             <div class="layui-form-item">
-                <label class="layui-form-label" style="color: #20a53a;">密码</label>
-                <div class="layui-input-inline" style=>
-                    <input type="password" name="password" required lay-verify="required" placeholder="请输入密码"
-                           autocomplete="off" class="layui-input" id="psw">
+                <label class="layui-form-label">密码</label>
+                <div class="layui-input-inline">
+                    <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
                 </div>
 
                 <div class="layui-form-item">
