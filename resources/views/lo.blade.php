@@ -13,7 +13,7 @@
 
 </style>
 <body>
-<button id ="btn2" class="layui-btn" onclick="click()" style="display: block">登录</button>
+<button id ="btn2" class="layui-btn" disabled="" type="button" onclick="click()" style="display: block">登录</button>
 <div id = 'lo' style="display: none;">
     <p class="txtCenter" style="color:green;align-content: center;text-align: center">登录</p>
     <div>
@@ -52,7 +52,7 @@
                 , $ = layui.jquery;
 
             if(sessionStorage){
-                self.document.getElementById("btn2").innerText = sessionStorage.mobile+"已登录";
+                self.document.getElementById("btn2").innerText = sessionStorage('mobile')+"已登录";
                 self.document.getElementById("btn2").onclick = "";
             }
 
