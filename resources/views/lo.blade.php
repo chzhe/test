@@ -59,7 +59,7 @@
                     skin: 'layui-layer-rim', //加上边框
                     area: ['420px', '300px'], //宽高
                     content: $("#lo").html(),
-                    end:function () {
+                    cancel:function () {
                         layer.closeAll();
                     }
 
@@ -79,6 +79,7 @@
                             layer.msg ('登录成功');
 
                          //self.location.reload();
+                            layer.closeAll();
                             self.document.getElementById("btn2").innerText = pram.mobile+"已登录";
                             self.document.getElementById("btn2").onclick = "";
 
