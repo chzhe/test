@@ -30,3 +30,4 @@ Route::get('lo','Admin\UserController@lo');//登录页
 Route::get('main',function (){
     return view('main');
 });
+

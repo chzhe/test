@@ -74,18 +74,7 @@ class UserController extends Controller
     }
 
 
-    public function postSetting(Request $request)
-    {
-        $site_name = $request->get('site_name', '');
-        $site_logo = $request->get('site_logo', '');
-        try {
-            Setting::setValueByKey('site_name', $site_name);
-            Setting::setValueByKey('site_logo', $site_logo);
-            return $this->success('设置成功');
-        } catch (\Exception $exception) {
-            return $this->error('设置失败');
-        }
-    }
+
 
 
     }
