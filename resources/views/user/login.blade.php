@@ -6,9 +6,9 @@
     <title>登录</title>
     <link rel="stylesheet" href="../layui/css/layui.css">
 </head>
+
+
 <body>
-
-
     <p class="txtCenter" style="color:green;align-content: center;text-align: center">登录</p>
     <div style="width: 650px; position: relative; left: 43%;">
 <form class="layui-form">
@@ -31,9 +31,11 @@
                 <button type="reset" class="layui-btn layui-btn-primary">重置</button>
             </div>
          </div>
+</form>
     </div>
 
-</form>
+
+
 <!-- 你的HTML代码 -->
 <script src="../layui/layui.js"></script>
         <script>
