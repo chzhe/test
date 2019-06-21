@@ -77,10 +77,10 @@
                     success : function (response) {
                         if(response.code==200){
                             layer.msg ('登录成功');
-                         self.location.reload();
-                         if(sessionStorage(pram)){
-                             self.document.getElementById("btn2").innerText = "已登录";
-                         }
+
+                         //self.location.reload();
+                            self.document.getElementById("btn2").innerText = "已登录";
+                            self.document.getElementById("btn2").onclick = "";
 
 
                      // window.document.getElementById("btn2").innerText = "yidenglu";
