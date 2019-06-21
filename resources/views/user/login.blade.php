@@ -24,13 +24,15 @@
         <div class="layui-input-inline">
             <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
         </div>
+    </div>
         <div class="layui-form-item">
             <div class="layui-input-block">
                 <button class="layui-btn" lay-submit lay-filter="formDemo">登录</button>
                 <button type="reset" class="layui-btn layui-btn-primary">重置</button>
             </div>
-        </div>
-    </div>>
+         </div>
+    </div>
+
 </form>
 <!-- 你的HTML代码 -->
 <script src="../layui/layui.js"></script>
