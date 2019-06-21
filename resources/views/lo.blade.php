@@ -78,7 +78,10 @@
                         if(response.code==200){
                             layer.msg ('登录成功');
                          self.location.reload();
-                         $("#btn2").hide();
+                         if(sessionStorage(pram)){
+                             self.document.getElementById("btn2").innerText = "已登录";
+                         }
+
 
                      // window.document.getElementById("btn2").innerText = "yidenglu";
 
