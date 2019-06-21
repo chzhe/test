@@ -15,8 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('reg','Admin\UserController@reg');//注册页
-Route::get('login','Admin\UserController@login');//登录页
+Route::get('reg',function (){
+    return view('reg');
+});//注册页
+Route::get('login',function (){
+    return view('login');
+});//登录页
 
 Route::post('postLogin','Admin\UserController@postLogin');//登录接口
 Route::get('logout','Admin\UserController@logout');//登出接口
