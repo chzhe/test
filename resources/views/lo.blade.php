@@ -51,6 +51,11 @@
                 , form = layui.form
                 , $ = layui.jquery;
 
+            if(sessionStorage){
+                self.document.getElementById("btn2").innerText = pram.mobile+"已登录";
+                self.document.getElementById("btn2").onclick = "";
+            }
+
 
             $("#btn2").click(function () {
 
@@ -80,8 +85,7 @@
 
                          self.location.reload();
                             // layer.closeAll();
-                            self.document.getElementById("btn2").innerText = pram.mobile+"已登录";
-                            self.document.getElementById("btn2").onclick = "";
+
 
 
                      // window.document.getElementById("btn2").innerText = "yidenglu";
