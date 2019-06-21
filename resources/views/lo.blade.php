@@ -22,7 +22,7 @@
             <div class="layui-form-item">
                 <label class="layui-form-label">手机号</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="mobile" required  lay-verify="required" placeholder="请输入手机号" autocomplete="off" class="layui-input">
+                    <input  type="text" name="mobile" required  lay-verify="required" placeholder="请输入手机号" autocomplete="off" class="layui-input">
                 </div>
             </div>
             <div class="layui-form-item">
@@ -52,7 +52,7 @@
                 , $ = layui.jquery;
 
             if(sessionStorage){
-                self.document.getElementById("btn2").innerText = pram.mobile+"已登录";
+                self.document.getElementById("btn2").innerText = sessionStorage.mobile+"已登录";
                 self.document.getElementById("btn2").onclick = "";
             }
 
