@@ -53,7 +53,7 @@
 
             if(sessionStorage){
                 self.document.getElementById("btn2").innerText = sessionStorage('mobile')+"已登录";
-                self.document.getElementById("btn2").onclick = "";
+                //self.document.getElementById("btn2").onclick = "";
             }
 
 
