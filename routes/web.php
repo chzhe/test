@@ -16,10 +16,10 @@ Route::get('/', function () {
 });
 
 Route::get('reg',function (){
-    return view('reg');
+    return view('user.reg');
 });//注册页
 Route::get('login',function (){
-    return view('login');
+    return view('user.login');
 });//登录页
 
 Route::post('postLogin','Admin\UserController@postLogin');//登录接口
