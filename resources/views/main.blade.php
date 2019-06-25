@@ -26,9 +26,9 @@
             ,form = layui.form;
 
         layer.msg('Bye Bye~');
-        {{--if(!empty('{{session('user_id')}}')){--}}
-            {{--$('#id').show();--}}
-        {{--}--}}
+        if(!empty('{{session('user_id')}}')){
+            $('#id').show();
+        }
     });
 </script>
 </body>
