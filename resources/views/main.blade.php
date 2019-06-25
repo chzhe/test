@@ -34,13 +34,20 @@
         // url: 'postLogin',
         // type: 'post',
         dataType: 'json',
-        // data: pram,
+        data: {mobile:data.field.mobile,password:data.field.password},
         success: function (response) {
 
-            if(!empty(response.sessionData('user_id'))){
+            // if(!empty(response.sessionData('user_id'))){
+            //     $('#test_btn').show();
+            // }
+
+            if(!empty(response.data)){
                 $('#test_btn').show();
             }
         }
+        // if(!empty(data)){
+        //
+        // };
     });
 
 

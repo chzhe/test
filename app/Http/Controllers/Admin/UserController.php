@@ -73,7 +73,15 @@ class UserController extends Controller
 
     }
 
-
+//    public function info(){
+//        $user_id = User::getUserId();
+//        $user = User::find($user_id);
+//        if (empty($user)){
+//            session()->forget('user_id');
+//            return $this->error('无此用户');
+//        }
+//        return $this->success($user);
+//    }
 
 
 
