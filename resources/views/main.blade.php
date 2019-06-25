@@ -37,7 +37,7 @@
         // data: pram,
         success: function (response) {
 
-            if(!empty(response.sessionData())){
+            if(!empty(response.sessionData('user_id'))){
                 $('#test_btn').show();
             }
         }
