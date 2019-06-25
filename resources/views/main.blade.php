@@ -26,10 +26,26 @@
             ,form = layui.form;
 
         layer.msg('Bye Bye~');
+        var pram = data.field;
+        $.ajax({
+            // url: 'postLogin',
+            // type: 'post',
+            dataType: 'json',
+            data: pram,
+            {{--if(--}}
+        {{--!empty('{{session(pram)}}')--}}
+    {{--)--}}
+        {{--{--}}
+            {{--$('#id').show();--}}
+        {{--}--}}
+
+
+    });
         if(!empty('{{session('user_id')}}')){
-            $('#id').show();
+      $('#test_btn').show();
         }
     });
+
 </script>
 </body>
 </html>
