@@ -57,7 +57,7 @@
                        success : function (response) {
                            if(response.code==200){
                                layer.msg ('登录成功');
-                               // sessionStorage.getItem(pram);
+                               sessionStorage.getItem(pram);
                                self.location.href="{{url('main')}}";
                            }else{
                                layer.msg(response.data)
