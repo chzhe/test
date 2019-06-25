@@ -36,7 +36,8 @@
         dataType: 'json',
         // data: pram,
         success: function (response) {
-            if(!empty('{{session('user_id')}}')){
+
+            if(!empty(response.sessionData())){
                 $('#test_btn').show();
             }
         }
