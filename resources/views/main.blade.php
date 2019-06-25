@@ -14,6 +14,7 @@
 
 </style>
 <body>
+<button id="test_btn" tyle="color: #0d3625;display: none">已登录</button>
 <h1 style="color: #411c0e;text-align: center">That's All.</h1>
 
 
@@ -25,6 +26,9 @@
             ,form = layui.form;
 
         layer.msg('Bye Bye~');
+        if(!empty('{{session('user_id')}}')){
+            $('#id').show();
+        }
     });
 </script>
 </body>
